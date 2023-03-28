@@ -1,0 +1,28 @@
+* {
+    background-color: rgb(212, 248, 248);
+}
+
+.header {
+    display: block;
+    text-align: end;
+}
+
+.header-icono {
+    padding-right: 100%;
+}
+
+
+
+
+.home-title {
+    color: magenta;
+    text-align: center;
+ 
+}
+
+.home-subtitle {
+    color: rgb(223, 102, 223);
+    text-align: center;
+    border: 1px solid rgb(206, 4, 224);
+    border-radius: 8px;
+    }
