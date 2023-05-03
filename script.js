@@ -3,12 +3,37 @@ const nombreInput = document.getElementById("nombreInput");
 const usuarioInput = document.getElementById("usuarioInput");
 const passwordInput = document.getElementById("passwordInput");
 const botonRegistrar = document.getElementById("botonRegistrar");
-const usuarios = [];
-const nuevoUsuario = {};
+const usuarios = [
+    {
+        nombre: "Miriam Sanchez",
+        username: "miri2020"
+    },
+    {
+        nombre: "Alain Jurado",
+        username: "elgranSpo"
+    },
+    {
+        nombre: "Din Grogu",
+        username: "baby9000"
+    },
+];
+/* const nuevoUsuario = {}; */
 
 console.log(nombreInput);
 console.log(usuarioInput);
 console.log(passwordInput);
+
+const verUsuarios = (nuevoUsuario) => {
+    const fichaNuevoUsuario = document.createElement("div");
+    fichaNuevoUsuario.className = "ficha";
+    fichaNuevoUsuario.innerHTML = `
+                                        <h3>${nuevoUsuario.nombre}</h3>
+                                        <p>Username: ${nuevoUsuario.username}</p>
+                                        <button>Perfil</button>
+                                        <button>Dar abrazo</>
+    `
+    contenedorUsuario.append(fichaNuevoUsuario);
+}
 
 const mandarDatos = document.getElementById ("login-formulario");
 
@@ -38,15 +63,14 @@ mandarDatos.addEventListener ("submit", (e) => {
 
     const enJson = JSON.stringify(nuevoUsuario);
     localStorage.setItem("newUser", enJson);
-    /*
-    nuevoUsuario = {
-        nombre : nombreInput,
-        usuario : usuarioInput,
-        clave : passwordInput
-    };
-    */
-    mandarDatos.reset();
 
+    mandarDatos.reset();
+    verUsuarios(nuevoUsuario);
 });
 console.log(usuarios);
 
+
+const contenedorUsuario = document.getElementById("contenedorUsuario");
+usuarios.forEach((nuevoUsuario) => {
+    verUsuarios(nuevoUsuario);
+})
