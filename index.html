@@ -11,25 +11,52 @@
 <body>
 
     <header class="header">
-        <a href="index.html" class="header-icono"><img src="resources/logo.png" alt="logo Marita Design"></a>
-        <a href="index.html">Home</a>
-        <a href="/">Acerca de mí</a>
-        <a href="/">Lettering</a>
-        <a href="/">Ilustraciones</a>
-        <a href="/">Tienda</a>
-        <a href="/">Contacto</a>
+        <div class="header-div">
+            <a href="index.html" class="header-icono"><img src="resources/logo.png" alt="logo Marita Design"></a>
+        </div>
+
+        <div class="header-div2">
+            <a href="index.html">Home</a>
+            <a href="/">Acerca de mí</a>
+            <a href="/">Lettering</a>
+            <a href="/">Ilustraciones</a>
+            <a href="/">Tienda</a>
+            <a href="/">Contacto</a>
+        </div>
+
     </header>
 
 
-    <main>
+    <main class="home">
         <h1 class="home-title">Marita Design</h1>
-        <h2 class="home-subtitle">Aquí amamos las letras, las flores y los dibujitos de amor <br><br> ***Sitio en construcción***</h2>
+        <h2 class="home-subtitle">Aquí amamos las letras, las flores y los dibujitos de amor (y odiamos a la 4T) <br><br> ***Sitio en construcción***</h2>
+
+        <div class="login">
+            <div></div>
+            <div>
+                <form class="login-form" id="login-formulario">
+                    <h3>Log in</h3>
+                    <label for="">Ingrese su nombre, un nombre de usuario y una contraseña válida</label>
+                    <input type="text" placeholder="Nombre completo" name="nombre" id="nombreInput" required>
+                    <input type="text" placeholder="Usuario" name="usuario" id="usuarioInput" required>
+                    <input type="password" placeholder ="Contraseña" name="password" id="passwordInput" required>
+                    <input class="login-form-submitbutton" type="submit" value="Registrar" id="botonRegistrar">
+                </form>
+            </div>
+            <div></div>
+        </div>
+
+        <div id="contenedorUsuario"></div>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <p class="footer-rights">2023. Marita Design. All rights reserved. Hecho con <3 por El Spo </p>
+        </div>
+    </footer>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
     
 
 </body>

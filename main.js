@@ -1,3 +1,5 @@
+
+
 let nameUser;
 let passwordUser;
 let userAge;
@@ -178,4 +180,7 @@ if ( userAge >= 18) {
 }
 
 */
+
+
+
 
