@@ -29,29 +29,21 @@
 
 
     <main class="home">
+
         <h1 class="home-title">Marita Design</h1>
-        <h2 class="home-subtitle">Aquí amamos las letras, las flores y los dibujitos de amor (y odiamos a la 4T) <br><br> ***Sitio en construcción***</h2>
+        <h2 class="home-subtitle">Espacio para empleados</h2>
 
-        <div class="login">
-            <div></div>
-            <div>
-                <form class="login-form" id="login-formulario">
-                    <h3>Log in</h3>
-                    <label for="">Ingrese su nombre, un nombre de usuario y una contraseña válida</label>
-                    <input type="text" placeholder="Nombre completo" name="nombre" id="nombreInput" required>
-                    <input type="text" placeholder="Usuario" name="usuario" id="usuarioInput" required>
-                    <input type="password" placeholder ="Contraseña" name="password" id="passwordInput" required>
-                    <input class="login-form-submitbutton" type="submit" value="Registrar" id="botonRegistrar">
-                </form>
-            </div>
-            <div></div>
-        </div>
+        <form id="productCreation" class="form">
+            <input type="text" name="nombre" placeholder="Ingrese el nombre del producto" required>
+            <input type="text" name="descript" placeholder="Ingrese descripción del producto" required>
+            <input type="number" name="precio" placeholder="Ingrese precio" required>
+            <button type="submit">Crear producto</button>
+        </form>
 
-        <div class="cuadroHonor">
-            <p>Cuadro de honor de los nuevos usuarios</p>
-        </div>
-        <div id="contenedorUsuario"></div>
-    </main>
+
+    </main> 
+
+
 
 
     <footer>
@@ -60,7 +52,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="empleados.js"></script>
     
 
 </body>
